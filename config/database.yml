@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: dcdmtviuc3jrfb
-  username: rdtgehwncsfvmx
-  password: 0de4cc378fa333e586723ec4621dc7d4f598f648f5b6b10cdf148f31a3ba925b
+  database: rails_watch_list_production
+  username: rails_watch_list
+  password: <%= ENV["RAILS_WATCH_LIST_DATABASE_PASSWORD"] %>
