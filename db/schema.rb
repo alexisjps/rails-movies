@@ -45,7 +45,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_21_075255) do
     t.bigint "list_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["list_id"], name: "index_reviews_on_list_id"
+    t.index ["mov"], name: "index_reviews_on_list_id"
   end
 
   add_foreign_key "bookmarks", "lists"
